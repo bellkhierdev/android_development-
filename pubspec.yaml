@@ -1,0 +1,147 @@
+name: issue
+description: هذا التطبيق يتيح لك اضافة المتهم وإدارة جميع بياناتة من حيث التعديل والحذف وما الى ذالك ويقوم بإظهار تنبيهات عند انتهاء الوقت المتاح للمتهم والوقت المحدد لتنبية هو الاسبوع الاول من تاريخ الإظافة المتهم  ثم بعد خمسة واربعون يوم ثم إيظا بعد خمسة واربعون يوم اخرى.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  # sdk: ">=2.16.0 <3.0.0"
+  sdk: ">=2.15.1 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+ 
+  #State Management
+  provider: ^5.0.0
+
+  # Utils Project
+  flutter_utils_project: ^1.1.1
+  
+  #Responsive ui
+  sizer: ^2.0.15
+  #Database
+  sqflite: ^2.0.1
+  image_picker: ^0.8.4+11
+  #for notification
+  # Najeeb Android 12
+  # flutter_local_notifications: 8.2.0
+  flutter_local_notifications: ^9.5.3+1
+
+  #for Auth with firebase and google
+  google_sign_in: 5.1.1
+  firebase_auth: 3.1.2
+  firebase_core: ^1.11.0
+  #This for firebase messaging notification
+  firebase_messaging: ^11.2.11
+  #This is for storage data in local database 
+  shared_preferences: ^2.0.12
+  #This is for animation card
+  simple_animations: ^4.0.1
+  awesome_dialog: ^2.1.1
+  # This is for animation loading login
+  lottie: ^1.0.1
+  intl: ^0.17.0
+  #This is for Custom DateTime
+  jiffy: ^4.1.0
+  #This is for style font Text
+  google_fonts: ^2.1.0
+  #   هذ  التي تعمل علا طلب البيانات بشكل تجزيئي مهمه جدا
+  # infinite_scroll_pagination: ^3.1.0
+  #This is style icons
+  material_design_icons_flutter: ^5.0.5955-rc.1
+  # This is radial  slider
+  syncfusion_flutter_gauges: ^19.3.56
+  url_launcher: ^6.0.17
+  # percent_indicator: ^3.4.0
+  feature_discovery: ^0.14.0
+  #This is for share data
+  share: ^2.0.4
+  #for for pdf
+  file_picker: ^4.2.7
+  pdf: ^3.1.0
+  open_file: ^3.2.1
+ 
+  #This is for uploaded data to google drive
+  googleapis: ^7.0.0
+  # This is for do backup to database
+  encrypt: ^5.0.0
+  path: ^1.8.0
+  #fingerprint auth
+  local_auth: ^2.0.1
+  # local_auth: ^1.1.10
+  http: ^0.13.3
+  
+ 
+  # This is to get data from google drive
+  kt_dart: ^0.9.0
+  #This is for delete emoji from text
+  remove_emoji: ^0.0.7
+# This ia for run function when app is background and when app is closed 
+  background_fetch: ^1.1.0
+  # Splash Screen Image
+  flutter_native_splash: ^1.1.8+4
+
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/splash_Image.png
+  android: true
+  ios: true
+ 
+ 
+ 
+
+
+
+
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# dependency_overrides:
+#   firebase_messaging_platform_interface: 3.2.1
+#   firebase_crashlytics_platform_interface: 3.2.1
+#   cloud_firestore_platform_interface: 5.5.1
+#   firebase_auth_platform_interface: 6.2.1
+#   firebase_storage_platform_interface: 4.1.1
+#   cloud_functions_platform_interface: 5.1.1 
+
+  flutter_lints: ^1.0.0
+  fluttertoast: ^8.0.9
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/Auth/
+    - fonts/Cairo-Regular.ttf
+    - assets/OpenSans-Regular.ttf
+    - assets/icon.png
+    - assets/developer/
+    - assets/lottie/
+    - assets/images/
+    - assets/splash_Image.png
+
+    
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: fonts/Cairo-Regular.ttf
+        - asset: fonts/Cairo-Bold.ttf
+          style: italic
+          weight: 700
+
+ 

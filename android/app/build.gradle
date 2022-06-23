@@ -1,0 +1,117 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+
+//-------------------this is for sicurty App ---------------//
+     //عندما يكون التطبيق جاهز بنسخة ال ريليز نشغل هذا الامر من اجل الحماية
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 31
+    // Najeeb Background_fetch
+    //  compileSdkVersion rootProject.ext.compileSdkVersion
+
+    // compileSdkVersion flutter.compileSdkVersion
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+  
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "najeeb.aslan.issue"
+        minSdkVersion 21
+        targetSdkVersion 31
+         multiDexEnabled true
+        
+  
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+  
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            multiDexEnabled true
+          
+        }
+    }
+  
+}
+
+flutter {
+    source '../..'
+}
+
+apply plugin: 'com.google.gms.google-services'
+dependencies {
+// implementation platform('com.google.firebase:firebase-bom:30.0.1')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //Najeeb
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.android.support:multidex:1.0.3'
+//    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+     implementation 'com.google.firebase:firebase-messaging:23.0.4'
+ // Najeeb Background_fetch
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    //Najeeb Android 12
+    implementation 'androidx.work:work-runtime-ktx:2.7.0'
+    
+    
+    
+
+}
