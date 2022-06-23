@@ -6,7 +6,7 @@
 
 
 # App Screen Shot 
-<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220528-214044_Gallery.jpg" width="400" height="200" />
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220528-214044_Gallery.jpg" width="200" height="400" />
 
 <!-- ![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220528-214044_Gallery.jpg) -->
 
