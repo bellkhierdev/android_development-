@@ -8,23 +8,22 @@
 # App Screen Shot 
 <img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220528-214044_Gallery.jpg" width="200" height="400" />
 
-<!-- ![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220528-214044_Gallery.jpg) -->
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214521.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214521.jpg" width="200" height="400" />
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214526.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214526.jpg" width="200" height="400" />
 
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214533.jpg" width="200" height="400" />
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214533.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214556.jpg" width="200" height="400" />
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214556.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214655.jpg" width="200" height="400" />
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214655.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-215723.jpg" width="200" height="400" />
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-215723.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-215816.jpg" width="200" height="400" />
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-215816.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-220117.jpg" width="200" height="400" />
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-220117.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-220130.jpg" width="200" height="400" />
 
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-220130.jpg)
