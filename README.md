@@ -6,8 +6,9 @@
 
 
 # App Screen Shot 
-
-![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220528-214044_Gallery.jpg)
+<img  src = "https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220528-214044_Gallery.jpg"/>
+</a>
+<!-- ![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220528-214044_Gallery.jpg) -->
 
 ![Demo](https://github.com/najeebaslan/AppIssue/blob/master/ScreenShot/Screenshot_20220530-214521.jpg)
 
