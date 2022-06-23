@@ -179,3 +179,4 @@ void onClickEnable() {
 // Add Private Key For Encrypt Data
 // Change Icon App
 // Change android:label From File AndroidManifest.xml
+
